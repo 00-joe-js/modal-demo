@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {authenticate} from '../store'
+import Modal from "./Modal";
 
 /**
  * COMPONENT
@@ -10,6 +11,7 @@ const AuthForm = props => {
 
   return (
     <div>
+      {/* <Modal onClose={() => {console.log("set up state later")}} banana={<h1>hehe</h1>} /> */}
       <form onSubmit={handleSubmit} name={name}>
         <div>
           <label htmlFor="username">
